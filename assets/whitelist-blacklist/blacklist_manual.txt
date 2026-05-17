@@ -1,5 +1,4 @@
-blacklist_manual,#genre#
-,#genre#,https://bxtv.3a.ink/
-,#genre#,https://catvod.com/
-,#genre#,https://stream1.freetv.fun/
-,#genre#,https://p2.bdstatic.com/
+blacklist_manual,https://bxtv.3a.ink/
+blacklist_manual,https://catvod.com/
+blacklist_manual,https://stream1.freetv.fun/
+blacklist_manual,https://p2.bdstatic.com/
