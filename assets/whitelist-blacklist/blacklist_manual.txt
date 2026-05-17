@@ -1,5 +1,0 @@
-blacklist_manual,#genre#
-bxtv.3a.ink
-catvod.com
-stream1.freetv.fun
-p2.bdstatic.com
