@@ -6,6 +6,8 @@ on:
 jobs:
   merge-m3u:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     env:
       MERGED_M3U: "live_platforms.m3u"
       TIMEOUT: 15
