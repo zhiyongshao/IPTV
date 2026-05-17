@@ -220,14 +220,14 @@ class ChannelClassifier:
         self.single_chn_count[channel_name] = self.single_chn_count.get(channel_name, 0) + 1
 
     def add_other_line(self, line: str, url: str):
-        if url not in self.other_urls and not any(url.startswith(b) for b in self.blacklist):
+        if url not in self.other_urls and url not in self.blacklist:
             self.other_urls.add(url)
             self.other_lines.append(line)
 
     # === 全局单频道限流 ===
     def classify(self, channel_name: str, channel_url: str, line: str):
         # 先判断：黑名单/空URL → 跳过；单频道达上限 → 跳过
-        if any(channel_url.startswith(b) for b in self.blacklist) or not channel_url or self.is_single_chn_limit(channel_name):
+        if channel_url in self.blacklist or not channel_url or self.is_single_chn_limit(channel_name):
             return
         # 原有分类逻辑不变
         for chn_type, chn_names in self.main_dict.items():
