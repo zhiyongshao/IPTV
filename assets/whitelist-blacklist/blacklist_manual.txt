@@ -1,0 +1,5 @@
+blacklist_manual,#genre#
+,#genre#,bxtv.3a.ink
+,#genre#,catvod.com
+,#genre#,stream1.freetv.fun
+,#genre#,p2.bdstatic.com
